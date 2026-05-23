@@ -173,6 +173,7 @@ After flashing, all alarm settings and compass calibration will be reset to defa
 ### 🔗 Resources
 1. Firmware repository: https://github.com/sdyspb/SdyWatch
 1. Web flasher page: https://sdyspb.github.io/SdyWatch/
+2. Website: https://ledtick.com
 
 ## License
 This project is licensed under the GNU General Public License v2.0 (GPL-2.0).
