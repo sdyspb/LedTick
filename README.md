@@ -1,5 +1,7 @@
 # ESP32-PICO-D4 SdyWatch
 
+ESP32-PICO-D4 SdyWatch or LedTick for short is a custom DIY watch with combined analogue and digital display based solely on discrete LEDs
+
 Firmware for a custom smartwatch with analog LED display, scrolling matrix, compass, NTP time sync, alarms, and deep‑sleep power management.
 
 <img width="1251" height="844" alt="image" src="https://github.com/user-attachments/assets/67f83ad0-4cf7-4457-8042-333f3df41961" />
@@ -68,7 +70,7 @@ Firmware for a custom smartwatch with analog LED display, scrolling matrix, comp
 
 ## Hardware Requirements
 
-- ESP32‑PICO‑D4 module (or any ESP32 with enough GPIOs)
+- ESP32‑PICO‑D4 chip (or any ESP32 with enough GPIOs)
 - 175 LEDs arranged as described (60 green, 12+12 bicolor, 91 for matrix)
 - Charlieplexing matrix wiring (5 cathodes, 14 anodes – pins defined in `config.h`)
 - External 32.768 kHz crystal for RTC (pins 32,33)
@@ -169,8 +171,33 @@ Use a different USB cable or port.
 After flashing, all alarm settings and compass calibration will be reset to defaults. You can reconfigure them via the UART console (see the main README).
 
 ### 🔗 Resources
-Firmware repository: https://github.com/sdyspb/SdyWatch
+1. Firmware repository: https://github.com/sdyspb/SdyWatch
+1. Web flasher page: https://sdyspb.github.io/SdyWatch/
 
-Web flasher page: https://sdyspb.github.io/SdyWatch/
+## License
+This project is licensed under the GNU General Public License v2.0 (GPL-2.0).
+You can find the full license text in the LICENSE file or at https://www.gnu.org/licenses/old-licenses/gpl-2.0.en.html.
+
+### Acknowledgments & Dependencies
+This firmware uses the following open-source components:
+
+**ESP-IDF** – the official development framework for ESP32, licensed under Apache License 2.0.
+https://github.com/espressif/esp-idf
+
+**argtable3** – a command‑line argument parsing library, licensed under BSD 3-Clause.
+https://github.com/argtable/argtable3
+
+**linenoise** – a small readline replacement, licensed under BSD 2-Clause.
+https://github.com/antirez/linenoise
+
+**esp-web-tools** – JavaScript library for flashing ESP devices from a browser, licensed under Apache License 2.0.
+https://github.com/espressif/esp-web-tools
+
+**QMC5883LCompass** (used for calibration sketch) – Arduino library for QMC5883L, license unknown (included for reference).
+https://github.com/ejoyneering/QMC5883LCompass
+
+**LIS3DH driver** – based on standard ESP-IDF I2C examples and datasheet.
+
+If you believe any component is missing or incorrectly attributed, please open an issue.
 
 
