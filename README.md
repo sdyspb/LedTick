@@ -143,7 +143,7 @@ All necessary files are already hosted on GitHub Pages. You only need a browser 
 Connect your SdyWatch to the computer with a USB cable.
 
 Open the following page in your browser:
-https://sdyspb.github.io/SdyWatch/
+https://sdyspb.github.io/LedTick/
 
 Click the Connect & Flash button.
 
